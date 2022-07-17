@@ -1,0 +1,104 @@
+html
+  head
+    title AI Vision Solution Many Stallings (Anyang, South Korea)
+
+    script(src="https://cdn.jsdelivr.net/npm/vue@2.6.14")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    style.
+      body { margin: 0 }
+      section { height: 100%; display:flex;}
+      #a { background-color: #1e81b0 }
+      #b { background-color: #eeeee4 }
+      #c { background-color: #e28743 }
+      #d { background-color: #eab676 }
+      #e { background-color: #76b5c5 }
+
+  body
+    #app
+      section#a
+        h2(style="margin:auto") A
+      section#b
+        h2(style="margin:auto") B
+      section#c
+        h2(style="margin:auto") C
+      section#d 
+        h2(style="margin:auto") D
+      section#e
+        h2(style="margin:auto") E
+
+  script(type='text/javascript').
+    var v = new Vue({
+      el: '#app',
+      components: {
+      },
+      data: {
+        lbl: 'a+',
+        cnt: 0,
+        elB: null,
+        elC: null,
+        elD: null,
+        elE: null
+      },
+      methods: {
+        scrollListener: function (e) {
+          window.focus()          
+          this.cnt++
+          switch(this.lbl)
+          {
+            case 'a+':
+            {
+              if(window.scrollY > this.elB.offsetTop)
+                window.scrollTo(0, this.elB.offsetTop)
+              break
+            }
+            case 'b+':
+            {
+              if(window.scrollY > this.elC.offsetTop)
+                window.scrollTo(0, this.elC.offsetTop)
+              break
+            }
+            case 'c+':
+            {
+              if(window.scrollY > this.elD.offsetTop)
+                window.scrollTo(0, this.elD.offsetTop)
+              break
+            }
+            case 'd+':
+            {
+              if(window.scrollY > this.elE.offsetTop)
+                window.scrollTo(0, this.elE.offsetTop)
+              break
+            }
+          }
+          if(this.cnt > 35)
+          {
+            this.cnt = 0
+            this.lbl = `${String.fromCharCode(this.lbl.charCodeAt(0) + 1)}${this.lbl.charAt(1)}`
+            console.log(this.lbl)
+            if(this.lbl == 'f+')
+              this.lbl = 'e+'
+          }
+
+        },
+      },
+      computed: {
+      },
+      created()
+      {
+      },
+      mounted()
+      {
+        window.addEventListener('scroll', this.scrollListener)
+        this.elB = document.querySelector('#b')
+        this.elC = document.querySelector('#c')
+        this.elD = document.querySelector('#d')
+        this.elE = document.querySelector('#e')
+      },
+      beforeDestroy()
+      {
+        window.removeEventListener('scroll', this.scrollListener)
+      }
+
+    })
+    
