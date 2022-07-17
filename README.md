@@ -3,6 +3,8 @@ Vue based but vanilla JS snap scroll action implemented. (processing)
 
 only one PUG File is prepared now.
 
+and at Chrome will be work properly.
+
 I want to modify this with us.
 
 Thank you.
