@@ -1,5 +1,5 @@
 # js-scroll-snap
-Vue based but vanilla JS snap scroll action implemented. (processing)
+Vue based but vanilla JS snap scroll action implemented.
 
 only one PUG File is prepared now.
 
