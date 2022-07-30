@@ -41,45 +41,23 @@ html
         elE: null
       },
       methods: {
+        near: function(b, t)
+        {
+          if(b < t && t < b + 75) return true 
+          if(b - 75 < t && t <= b) return true 
+          return false
+        },
         scrollListener: function (e) {
-          window.focus()          
-          this.cnt++
-          switch(this.lbl)
-          {
-            case 'a+':
-            {
-              if(window.scrollY > this.elB.offsetTop)
-                window.scrollTo(0, this.elB.offsetTop)
-              break
-            }
-            case 'b+':
-            {
-              if(window.scrollY > this.elC.offsetTop)
-                window.scrollTo(0, this.elC.offsetTop)
-              break
-            }
-            case 'c+':
-            {
-              if(window.scrollY > this.elD.offsetTop)
-                window.scrollTo(0, this.elD.offsetTop)
-              break
-            }
-            case 'd+':
-            {
-              if(window.scrollY > this.elE.offsetTop)
-                window.scrollTo(0, this.elE.offsetTop)
-              break
-            }
-          }
-          if(this.cnt > 35)
-          {
-            this.cnt = 0
-            this.lbl = `${String.fromCharCode(this.lbl.charCodeAt(0) + 1)}${this.lbl.charAt(1)}`
-            console.log(this.lbl)
-            if(this.lbl == 'f+')
-              this.lbl = 'e+'
-          }
-
+          window.focus()
+          
+          if(this.near(this.elB.offsetTop, window.scrollY))
+            window.scrollTo(0, this.elB.offsetTop)
+          else if(this.near(this.elC.offsetTop, window.scrollY))
+            window.scrollTo(0, this.elC.offsetTop)
+          else if(this.near(this.elD.offsetTop, window.scrollY))
+            window.scrollTo(0, this.elD.offsetTop)
+          else if(this.near(this.elE.offsetTop, window.scrollY))
+            window.scrollTo(0, this.elE.offsetTop)
         },
       },
       computed: {
