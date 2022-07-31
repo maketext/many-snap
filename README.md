@@ -26,4 +26,5 @@ Check out the PUG file.
 Features
 - under development processing
 - pursue stability design
+- can deploy as CDN
 
