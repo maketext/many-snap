@@ -8,7 +8,7 @@ only one PUG File is prepared now.
 
 and at all BROWSER with Chrome will be work properly.
 
-I want to modify and complete this with us.
+I want to modify and complete this with us. Feel free to connect maketext@manystallings.com
 
 Thank you.
 
