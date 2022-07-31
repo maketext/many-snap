@@ -1,4 +1,7 @@
 # js-scroll-snap
+
+sample ~~> http://www.plusuniv.com
+
 Vue based but vanilla JS snap scroll action implemented.
 
 only one PUG File is prepared now.
