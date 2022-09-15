@@ -59,6 +59,8 @@
 
   function near(b, t)
   {
+    if(b == undefined) return false
+    if(t == undefined) return false
     if(b < t && t < b + 75) return true 
     if(b - 75 < t && t <= b) return true 
     return false
