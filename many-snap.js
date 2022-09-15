@@ -42,7 +42,9 @@
   * @static
   * @returns {None} Snap Object's start trigger.
   */
-   snap.init = function () {
+   snap.init = function (elList) {
+    if(Array.isArray(elList))
+      snap.elList = elList
     for(let i = 0; i < snap.elList.length; i++)
     {
       try {
