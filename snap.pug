@@ -1,80 +1,44 @@
-html
+doctype html
+html.h100()
   head
-    title AI Vision Solution Many Stallings (Anyang, South Korea)
+    meta(charset='utf-8')
+    script(type='text/javascript', src="/js/vue2611.js")
+    script(type='text/javascript', src="/js/buefy.js")
+    script(type='text/javascript', src="/js/many-snap.js")
 
-    script(src="https://cdn.jsdelivr.net/npm/vue@2.6.14")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-
-    style.
-      body { margin: 0 }
-      section { height: 100%; display:flex;}
-      #a { background-color: #1e81b0 }
-      #b { background-color: #eeeee4 }
-      #c { background-color: #e28743 }
-      #d { background-color: #eab676 }
-      #e { background-color: #76b5c5 }
-
-  body
-    #app
-      section#a
-        h2(style="margin:auto") A
-      section#b
-        h2(style="margin:auto") B
-      section#c
-        h2(style="margin:auto") C
-      section#d 
-        h2(style="margin:auto") D
-      section#e
-        h2(style="margin:auto") E
-
-  script(type='text/javascript').
-    var v = new Vue({
-      el: '#app',
-      components: {
-      },
-      data: {
-        elB: null,
-        elC: null,
-        elD: null,
-        elE: null
-      },
-      methods: {
-        near: function(b, t)
-        {
-          if(b < t && t < b + 75) return true 
-          if(b - 75 < t && t <= b) return true 
-          return false
-        },
-        scrollListener: function (e) {
-          window.focus()
-          
-          if(this.near(this.elB.offsetTop, window.scrollY))
-            window.scrollTo(0, this.elB.offsetTop)
-          else if(this.near(this.elC.offsetTop, window.scrollY))
-            window.scrollTo(0, this.elC.offsetTop)
-          else if(this.near(this.elD.offsetTop, window.scrollY))
-            window.scrollTo(0, this.elD.offsetTop)
-          else if(this.near(this.elE.offsetTop, window.scrollY))
-            window.scrollTo(0, this.elE.offsetTop)
-        },
-      },
-      computed: {
-      },
-      created()
-      {
-      },
-      mounted()
-      {
-        window.addEventListener('scroll', this.scrollListener)
-        this.elB = document.querySelector('#b')
-        this.elC = document.querySelector('#c')
-        this.elD = document.querySelector('#d')
-        this.elE = document.querySelector('#e')
-      },
-      beforeDestroy()
-      {
-        window.removeEventListener('scroll', this.scrollListener)
-      }
-
-    })
+    link(rel='stylesheet', href='/css/buefy.css')
     
+    title Many Snap Scroll Test
+    style.
+        .h100 {
+            height: 100vh;
+        }
+
+body.h100
+    #app.h100
+        .tile#a(style="height:100%;background:#FBF2CF")
+        .tile#b(style="height:100%;background:#C6EBC5")
+        .tile#c(style="height:100%;background:#A1C298")
+        .tile#d(style="height:100%;background:#C6EBC5")
+        .tile#e(style="height:100%;background:#FBF2CF")
+
+script(type="text/javascript").
+    let v = new Vue({
+        el: '#app',
+        components: {
+        },
+        data: {
+        },
+        methods: {
+        },
+        computed: {
+        },
+        created()
+        {
+
+        },
+        mounted()
+        {
+            manysnap.init()
+        }
+    })
