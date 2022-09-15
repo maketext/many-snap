@@ -42,7 +42,7 @@
   * @static
   * @returns {None} Snap Object's start trigger.
   */
-   snap.init = function (elList) {
+  snap.init = function (elList) {
     if(Array.isArray(elList))
       snap.elList = elList
     for(let i = 0; i < snap.elList.length; i++)
@@ -50,31 +50,32 @@
       try {
         if(typeof snap.elList[i] === 'string')
           snap.elList[i] = document.querySelector(snap.elList[i])
-
       } catch(e) {
         throw new Error('elList\'s querySelector not matched.')
       }
     }
+
   }
 
   function near(b, t)
   {
-    if(b == undefined) return false
-    if(t == undefined) return false
     if(b < t && t < b + 75) return true 
     if(b - 75 < t && t <= b) return true 
     return false
   }
   window.addEventListener('scroll', () => {
-      window.focus()
-      for(const el of snap.elList)        
-        if(near(el.offsetTop, window.scrollY))
-        {
-          window.scrollTo(0, el.offsetTop)
-          break
-        }
-      if(typeof snap === 'function')
-       snap.onscroll()
+    window.focus()
+    for(const el of snap.elList)
+    {
+      if(el == null) continue
+      if(near(el.offsetTop, window.scrollY))
+      {
+        window.scrollTo(0, el.offsetTop)
+        break
+      }
+    }
+    if(typeof snap === 'function')
+     snap.onscroll()
   })
 
   snap.toString = function() {
