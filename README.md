@@ -1,11 +1,14 @@
 # many-snap
 
-sample ~~> http://www.plusuniv.com
+runtime sample (not code supported) ~~> http://www.plusuniv.com
 
 vanilla JS snap scroll action implemented.
 
-PUG File example is prepared now.
+
+### PUG File example is prepared now.
 In example PUG file, integrated with Vue.js 2
+
+### [HOW TO] Just put the many-snap.js file in your project and get it like CDN developement.
 
 and at all BROWSER with Chrome will be work properly.
 
