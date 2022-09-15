@@ -1,10 +1,11 @@
-# js-scroll-snap
+# many-snap
 
 sample ~~> http://www.plusuniv.com
 
-Vue based but vanilla JS snap scroll action implemented.
+vanilla JS snap scroll action implemented.
 
-only one PUG File is prepared now.
+PUG File example is prepared now.
+In example PUG file, integrated with Vue.js 2
 
 and at all BROWSER with Chrome will be work properly.
 
@@ -19,12 +20,7 @@ Scroll with snap for web based pure JavaScript library.
 
 Can be used with Vue.js or React etc...
 
-In example PUG file, integrated with Vue.js 2
-
-Check out the PUG file.
-
 Features
 - under development processing
-- pursue stability design
-- can deploy as CDN (now preparing)
+- can deploy as CDN
 
