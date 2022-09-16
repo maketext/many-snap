@@ -45,7 +45,7 @@ Features
 - under development processing
 - can deploy as CDN
 
-#License
+# License
 many-snap is under MIT License.
 
 MIT License
