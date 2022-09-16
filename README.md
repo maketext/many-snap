@@ -9,6 +9,24 @@ vanilla JS snap scroll action implemented.
 In example PUG file, integrated with Vue.js 2
 
 ### [HOW TO] Just put the many-snap.js file in your project and get it like CDN developement.
+Press init code on DOMContentLoaded Event or after scope.
+```
+manysnap.init()
+```
+
+Or explicitly pass CSS Selector String Array param like this.
+```
+manysnap.init(['#content1', '#content2', '#content3'])
+```
+Must do param from first content tag that can be middle of HTML tags but height 100% recommended.
+
+NOTE: window.onscroll Event will be overrided. and still use like
+```
+manysnap.onscroll = function() {
+...
+}
+```
+
 
 and at all BROWSER with Chrome will be work properly.
 
