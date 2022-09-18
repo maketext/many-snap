@@ -5,9 +5,6 @@ It's simple to use. Please read below the Documentation as small guides.
 
 runtime sample (not code supported) ~~> http://www.plusuniv.com
 
-vanilla JS snap scroll action implemented.
-
-
 ### PUG File example is prepared now.
 In example PUG file, integrated with Vue.js 2
 
