@@ -14,7 +14,10 @@ Press init code on DOMContentLoaded Event or after scope.
 manysnap.init()
 ```
 
-Or explicitly pass CSS Selector String Array param like this.
+Or explicitly pass CSS Selector String Array param like this for example, if tag structure is below.
+
+![many-snap](https://user-images.githubusercontent.com/32004044/190890916-9e145f4c-a8e3-40ac-9676-c20b37207377.svg)
+
 ```
 manysnap.init(['#content1', '#content2', '#content3'])
 ```
