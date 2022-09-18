@@ -1,5 +1,8 @@
 # many-snap
 
+Hello, I'm maker of many-snap, javascript scroll snap library, provides snapping slightly smooth action and can be use in ALL THE BROWSER.
+It's simple to use. Please read below the Documentation as small guides.
+
 runtime sample (not code supported) ~~> http://www.plusuniv.com
 
 vanilla JS snap scroll action implemented.
