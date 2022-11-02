@@ -11,7 +11,7 @@ In example PUG file, integrated with Vue.js 2
 ### [HOW TO] Just put the snapped.js file in your project and get it like CDN developement.
 Press init code on DOMContentLoaded Event or after scope.
 ```
-manysnap.init()
+snapped.init()
 ```
 
 Or explicitly pass CSS Selector String Array param like this for example, if tag structure is below.
@@ -19,13 +19,13 @@ Or explicitly pass CSS Selector String Array param like this for example, if tag
 ![snapped](https://user-images.githubusercontent.com/32004044/190890916-9e145f4c-a8e3-40ac-9676-c20b37207377.svg)
 
 ```
-manysnap.init(['#content1', '#content2', '#content3'])
+snapped.init(['#content1', '#content2', '#content3'])
 ```
 Must do param from first content tag that can be middle of HTML tags but height 100% recommended.
 
 NOTE: window.onscroll Event will be overrided. and still use like
 ```
-manysnap.onscroll = function() {
+snapped.onscroll = function() {
 ...
 }
 ```
