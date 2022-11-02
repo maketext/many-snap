@@ -1,4 +1,5 @@
 # snapped
+## NO DEPENDENCY OF ANY JS
 
 Hello, I'm maker of snapped, javascript scroll snap library, provides snapping slightly smooth action and can be use in ALL THE BROWSER.
 It's simple to use. Please read below the Documentation as small guides.
