@@ -81,5 +81,5 @@
   snap.toString = function() {
     return snap.TOSTRING
   }
-  window.manysnap = snap
+  window.snapped = snap
 }.call(this))
