@@ -1,6 +1,6 @@
-# many-snap
+# snapped
 
-Hello, I'm maker of many-snap, javascript scroll snap library, provides snapping slightly smooth action and can be use in ALL THE BROWSER.
+Hello, I'm maker of snapped, javascript scroll snap library, provides snapping slightly smooth action and can be use in ALL THE BROWSER.
 It's simple to use. Please read below the Documentation as small guides.
 
 runtime sample (not code supported) ~~> http://www.plusuniv.com
@@ -8,7 +8,7 @@ runtime sample (not code supported) ~~> http://www.plusuniv.com
 ### PUG File example is prepared now.
 In example PUG file, integrated with Vue.js 2
 
-### [HOW TO] Just put the many-snap.js file in your project and get it like CDN developement.
+### [HOW TO] Just put the snapped.js file in your project and get it like CDN developement.
 Press init code on DOMContentLoaded Event or after scope.
 ```
 manysnap.init()
@@ -16,7 +16,7 @@ manysnap.init()
 
 Or explicitly pass CSS Selector String Array param like this for example, if tag structure is below.
 
-![many-snap](https://user-images.githubusercontent.com/32004044/190890916-9e145f4c-a8e3-40ac-9676-c20b37207377.svg)
+![snapped](https://user-images.githubusercontent.com/32004044/190890916-9e145f4c-a8e3-40ac-9676-c20b37207377.svg)
 
 ```
 manysnap.init(['#content1', '#content2', '#content3'])
@@ -49,7 +49,7 @@ Features
 - can deploy as CDN
 
 # License
-many-snap is under MIT License.
+snapped is under MIT License.
 
 MIT License
 
