@@ -1,4 +1,5 @@
-# snapped
+![snapped-logo](https://user-images.githubusercontent.com/32004044/199469214-e6585d99-3bac-4f65-8a9a-e436b92ee517.svg)
+
 ## NO DEPENDENCY OF ANY JS
 
 Hello, I'm maker of snapped, javascript scroll snap library, provides snapping slightly smooth action and can be use in ALL THE BROWSER.
