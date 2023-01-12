@@ -4,7 +4,7 @@
 Hello, I'm maker of snapscroll, javascript scroll snap library, provides snapping slightly smooth action and can be use in ALL THE BROWSER.
 It's simple to use. Please read below the Documentation as small guides.
 
-runtime sample (not code supported) ~~> http://www.plusuniv.com
+runtime sample http://www.plusuniv.com
 
 ### PUG File example is prepared now.
 In example PUG file, integrated with Vue.js 2
