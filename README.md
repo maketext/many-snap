@@ -1,3 +1,4 @@
+![many-snapscroll-logo](https://user-images.githubusercontent.com/32004044/212228058-c5a9156f-7b8c-4982-a18c-d91ee50d0403.png)
 
 ## NO DEPENDENCY OF ANY JS
 
