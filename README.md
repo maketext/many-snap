@@ -51,7 +51,7 @@ Features
 - can deploy as CDN
 
 # License
-many-scrollsnap is under MIT License.
+many-snapscroll is under MIT License.
 
 MIT License
 
