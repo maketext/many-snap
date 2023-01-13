@@ -51,8 +51,8 @@ Features
 - can deploy as CDN
 
 # License
-snapped is under MIT License.
+many-scrollsnap is under MIT License.
 
 MIT License
 
-Copyright (c) 2022 Many Stallings Company
+Copyright (c) 2023 Many Stallings Company
