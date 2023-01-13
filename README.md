@@ -25,7 +25,7 @@ snapped.init(['#content1', '#content2', '#content3'])
 ```
 Must do param from first content tag that can be middle of HTML tags but height 100% recommended.
 
-NOTE: window.onscroll Event will be overrided. and still use like
+NOTE: window.onscroll Event will be added. And can use like
 ```
 snapped.onscroll = function() {
 ...
