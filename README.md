@@ -23,7 +23,11 @@ Or explicitly pass CSS Selector String Array param like this for example, if tag
 ```
 snapped.init(['#content1', '#content2', '#content3'])
 ```
-Must do param from first content tag that can be middle of HTML tags but height 100% recommended.
+locate parameter from first content tagname.
+```
+snapped.init(['#content2', '#content3'])
+```
+Or locate string array parameter from second content tagname that can be middle of HTML tags but height 100% recommended.
 
 NOTE: window.onscroll Event will be added. And can use like
 ```
